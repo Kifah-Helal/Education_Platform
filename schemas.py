@@ -9,8 +9,8 @@ class SignUpModel(BaseModel):
     Username : str
     Email : str
     Password : str
-    Is_Student : Optional[bool]
-    Is_Teacher : Optional[bool]
+    Is_Student : bool
+    Is_Teacher : bool
 
     class Config:
         orm_mode = True
